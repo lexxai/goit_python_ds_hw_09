@@ -38,15 +38,19 @@ _________________________________________________________________
                                                                  
  Hidden_Layer_2 (Dense)      (None, 512)               131584    
                                                                  
- OUTPUT (Dense)              (None, 10)                5130      
+ Hidden_Layer_3 (Dense)      (None, 256)               131328    
+                                                                 
+ Hidden_Layer_4 (Dense)      (None, 32)                8224      
+                                                                 
+ OUTPUT (Dense)              (None, 10)                330       
                                                                  
 =================================================================
-Total params: 337674 (1.29 MB)
-Trainable params: 337674 (1.29 MB)
+Total params: 472426 (1.80 MB)
+Trainable params: 472426 (1.80 MB)
 Non-trainable params: 0 (0.00 Byte)
 ```
 
-IL=784, HL1=256 (relu), HL2=512 (relu, L2) , OL=10 (softmax)
+IL=784, HL1=256 (relu), HL2=512 (relu, L2) , HL3=256 (relu), HL4=32 (relu), OL=10 (softmax)
 
 ## Графік процесу навчання
 
@@ -55,24 +59,24 @@ IL=784, HL1=256 (relu), HL2=512 (relu, L2) , OL=10 (softmax)
 
 ## Результати навчання (classification report)
 ```
-precision    recall  f1-score   support
+ precision    recall  f1-score   support
 
-0 - T-shirt/top       0.81      0.88      0.84      1000
-1 - Trouser           0.99      0.97      0.98      1000
-2 - Pullover          0.84      0.74      0.79      1000
-3 - Dress             0.88      0.90      0.89      1000
-4 - Coat              0.72      0.90      0.80      1000
-5 - Sandal            0.95      0.97      0.96      1000
-6 - Shirt             0.77      0.60      0.68      1000
-7 - Sneaker           0.95      0.93      0.94      1000
-8 - Bag               0.97      0.97      0.97      1000
-9 - Ankle boot        0.96      0.96      0.96      1000
+0 - T-shirt/top       0.82      0.88      0.85      1000
+1 - Trouser           0.98      0.98      0.98      1000
+2 - Pullover          0.79      0.81      0.80      1000
+3 - Dress             0.91      0.88      0.90      1000
+4 - Coat              0.79      0.85      0.82      1000
+5 - Sandal            0.98      0.96      0.97      1000
+6 - Shirt             0.78      0.67      0.72      1000
+7 - Sneaker           0.95      0.96      0.96      1000
+8 - Bag               0.96      0.98      0.97      1000
+9 - Ankle boot        0.95      0.96      0.96      1000
 
-       accuracy                           0.88     10000
-      macro avg       0.88      0.88      0.88     10000
-   weighted avg       0.88      0.88      0.88     10000
+       accuracy                           0.89     10000
+      macro avg       0.89      0.89      0.89     10000
+   weighted avg       0.89      0.89      0.89     10000
 
-0.8817
+0.8928
 ```
 
 ## Результати навчання (Confusion Matrix)
