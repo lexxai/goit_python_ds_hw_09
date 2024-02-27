@@ -64,6 +64,9 @@ IL=784, HL1=256 (relu), HL2=512 (relu, L2) , HL3=256 (relu), HL4=32 (relu), OL=1
 ![Model_3_DO_0.2_ca](Model_3_DO_0.2_ca.png)
 ![Model_3_DO_0.5_ca](Model_3_DO_0.5_ca.png)
 ![Model_2_lrelu_ca_ca](Model_2_lrelu_ca.png)
+![Model_2_lrelu_b32_ca](Model_2_lrelu_b32_ca.png)
+![Model_2_lrelu_sgd_ca](Model_2_lrelu_sgd_ca.png)
+![Model_2_lrelu_bnorm_ca](Model_2_lrelu_bnorm_ca.png)
 
 # Порівняння моделей
 
